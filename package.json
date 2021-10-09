@@ -1,0 +1,35 @@
+{
+  "name": "platzi-recetas",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.3.0",
+    "react": "^16.4.1",
+    "react-app-rewire-workbox": "^2.0.1",
+    "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "4.0.3",
+    "serve": "^9.1.0",
+    "workbox-webpack-plugin": "^6.3.0"
+  },
+  "scripts": {
+    "dev": "craco start",
+    "start": "serve ./build -s -p ${PORT:-4000}",
+    "build": "craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
