@@ -33,4 +33,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: publish to github pages
-        run: gh-pages -d build
+        run: npm run deploy
