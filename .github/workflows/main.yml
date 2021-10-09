@@ -25,6 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      # GH config
+      - name: GH setup
+        run: |
+            git config --global user.email "jose.leon.avila@gmail.com"
+            git config --global user.name "j-avila"  
+
       # Runs a single command using the runners shell
       - name: Install and build
         run: |
